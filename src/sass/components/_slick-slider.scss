@@ -27,9 +27,9 @@
 .slick-dots li.slick-active button {
   background-color: #d31342;
 }
-.slick-dots li:first-child.slick-active button {
-  background-image: url('../../src/images/reviews/home.svg');
-}
+// .slick-dots li:first-child.slick-active button {
+//   background-image: url('../../src/images/reviews/home.svg');
+// }
 /* Элемент точки */
 .slick-dots li button {
   font-size: 0;
@@ -41,7 +41,7 @@
 }
 
 .slick-dots li:first-child button {
-  background-image: url('../../src/images/reviews/home1.svg');
+  // background-image: url('../../src/images/reviews/home1.svg');
   background-size: contain;
   background-color: transparent;
   background-repeat: no-repeat;
