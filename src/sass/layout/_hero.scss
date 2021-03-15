@@ -1,10 +1,9 @@
 .hero {
-  position: relative;
   padding-top: 193px;
   padding-bottom: 160px;
   background-color: #ffb8ca;
   overflow: hidden;
-
+  
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 102px;
     padding-bottom: 34px;
@@ -14,8 +13,10 @@
     padding-top: 171px;
     padding-bottom: 56px;
   }
+}
 
-
+.hero-container{
+  position: relative;
 }
 
 .hero-wrapper {
@@ -25,12 +26,10 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-bottom: 66px;
-    position: relative;
   }
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 112px;
-    position: relative;
   }
 }
 
@@ -122,14 +121,9 @@
   }
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 94px;
-    right: 34px;
+    top: 0;
+    right: 3%;
     z-index: 10;
-  }
-
-  @media screen and (min-width: 1280px) {
-    top: 156px;
-    right: 97px;
   }
 }
 
@@ -260,7 +254,7 @@
 
 .hero-wrap-read-more {
   width: 112px;
-  height: 50px;
+  height: 45px;
   margin-bottom: 7px;
   overflow: hidden;
 
@@ -275,14 +269,6 @@
   height: auto;
   overflow: visible;
   width: 170px;
-
-  @media screen and (min-width: 1280px) {
-    @include font(12px, $title-font-weight, 14px);
-  }
-
-  @media screen and (min-width: 1480px) {
-    width: 300px;
-  }
 }
 
 .hero-wrap-read-more.is-hidden + .hero-btn-read-more-open {
@@ -298,7 +284,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    @include font(14px, $title-font-weight, 20px);
+    @include font(12px, $title-font-weight, 16px);
     margin-bottom: 20px;
   }
 }
@@ -381,8 +367,8 @@
 .hero-ellipse {
   position: absolute;
   display: block;
-  bottom: 75px;
-  right: -55px;
+  top: -100px;
+  right: -65px;
   z-index: 1;
   width: 346px;
   height: 344px;
@@ -390,8 +376,8 @@
   border-radius: 50%;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    bottom: 46px;
-    right: 137px;
+    top: -65px;
+    right: 20%;
     width: 324px;
     height: 322px;
     animation-name: changeSize;
@@ -401,8 +387,8 @@
   }
 
   @media screen and (min-width: 1280px) {
-    bottom: 52px;
-    right: 267px;
+    top: -95px;
+    right: 18%;
     width: 538px;
     height: 538px;
     animation-name: changeSize2;
@@ -414,20 +400,22 @@
 
 .hero-ice-cream-img {
   position: absolute;
-  bottom: 0;
-  right: 32px;
+  bottom: -105%;
+  right: 3%;
   width: 171px;
   height: 410px;
   z-index: 10;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    right: 230px;
+    bottom: -15%;
+    right: 34%;
     width: 143px;
     height: 336px;
   }
 
   @media screen and (min-width: 1280px) {
-    right: 430px;
+    bottom: -15%;
+    right: 34%;
     width: 236px;
     height: 557px;
   }
@@ -460,7 +448,7 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    bottom: 35px;
+    top: 55%;
     width: 124px;
     height: 126px;
     z-index: 10;
@@ -484,8 +472,8 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    bottom: 0;
-    right: 34px;
+    bottom: -14%;
+    right: 1%;
     width: 168px;
     height: 133px;
     z-index: 10;
@@ -496,8 +484,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    bottom: 0;
-    right: 109px;
+    right: 2%;
     width: 293px;
     height: 232px;
   }
