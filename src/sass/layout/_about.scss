@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 767px) {
   .about-section {
-    // background-image: url(../../src/images/about/milk-mobile.png);
+    background-image: url(../../src/images/about/milk-mobile.png);
     background-position: 50% 90%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -19,7 +19,7 @@
     .about-section {
       // улалити
         color: transparent;
-      // background-image: url(../../src/images/about/milk-mobile@2x.png);
+      background-image: url(../../src/images/about/milk-mobile@2x.png);
     }
   }
 
@@ -80,7 +80,7 @@
 @media screen and (min-width: 1280px) {
   .about-section {
     padding-bottom: 40px;
-    // background-image: url(../../src/images/about/milk-desktop.png);
+    background-image: url(../../src/images/about/milk-desktop.png);
     background-position: 0 335px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -91,7 +91,7 @@
       .about-section {
         // улалити
         color: transparent;
-        // background-image: url(../../src/images/about/milk-mobile@2x.png);
+        background-image: url(../../src/images/about/milk-mobile@2x.png);
       }
     }
   }
@@ -187,7 +187,7 @@
   height: 95%;
   max-height: 609px;
   background-color: $accent-background-color;
-  // background-image: url(../../src/images/about/milk-for-modal.png);
+  background-image: url(../../src/images/about/milk-for-modal.png);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: contain;

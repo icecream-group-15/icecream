@@ -98,65 +98,65 @@
 
 }
 
-    // @mixin products-before ($product) {
-    //     position: absolute;
-	//     top: -35vw;
-    //     left: 5%;
-	//     content: "";
-	//     display: block;
-	//     width: 90%;
-    //     height: 78vw;	          
-    //     background-repeat: no-repeat;      
-    //     background-position: center;   
-    //     background-size: contain;
-        // background-image: url("../images/products/mobile/product-#{$product}-249.png");
+    @mixin products-before ($product) {
+        position: absolute;
+	    top: -35vw;
+        left: 5%;
+	    content: "";
+	    display: block;
+	    width: 90%;
+        height: 78vw;	          
+        background-repeat: no-repeat;      
+        background-position: center;   
+        background-size: contain;
+        background-image: url("../images/products/mobile/product-#{$product}-249.png");
 
-    //     @media screen and (min-device-pixel-ratio: 2),
-    //     screen and (min-resolution: 192dpi),
-    //      screen and (min-resolution: 2dppx){
-    //       background-image: url("../images/products/mobile/product-#{$product}-498.png");   
-    //      }
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+         screen and (min-resolution: 2dppx){
+          background-image: url("../images/products/mobile/product-#{$product}-498.png");   
+         }
 
-    //     @media screen and (min-width: 768px) {
-    //     top: -113px;
-    //     height: 252px;
-    //     background-image: url("../images/products/tablet/product-#{$product}-220.png");
-    //     }
-    //      @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-    //     screen and (min-resolution: 192dpi) and (min-width: 768px),
-    //     screen and (min-resolution: 2dppx) and (min-width: 768px){
-    //     background-image: url("../images/products/tablet/product-#{$product}-440.png");
-    //     }
-    //     @media screen and (min-width: 1280px) {
-    //     width: 335px;
-    //     height: 335px;
-    //     left: -3px;
-    //     top: -210px;
-    //     background-image: url("../images/products/desktop/product-#{$product}-335.png");
-    //     }
-    //     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
-    //     screen and (min-resolution: 192dpi) and (min-width: 1280px),
-    //     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-    //     background-image: url("../images/products/desktop/product-#{$product}-670.png");
-    //     }
+        @media screen and (min-width: 768px) {
+        top: -113px;
+        height: 252px;
+        background-image: url("../images/products/tablet/product-#{$product}-220.png");
+        }
+         @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+        screen and (min-resolution: 192dpi) and (min-width: 768px),
+        screen and (min-resolution: 2dppx) and (min-width: 768px){
+        background-image: url("../images/products/tablet/product-#{$product}-440.png");
+        }
+        @media screen and (min-width: 1280px) {
+        width: 335px;
+        height: 335px;
+        left: -3px;
+        top: -210px;
+        background-image: url("../images/products/desktop/product-#{$product}-335.png");
+        }
+        @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+        screen and (min-resolution: 192dpi) and (min-width: 1280px),
+        screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+        background-image: url("../images/products/desktop/product-#{$product}-670.png");
+        }
 
-    // }
+    }
 
-    // .products {
+    .products {
         
-    //     &-icecream::before {
-    //     @include products-before(1);
-    //    }
+        &-icecream::before {
+        @include products-before(1);
+       }
       
-    //    &-icecoffee::before {
-    //     @include products-before(2);
-    //    }
+       &-icecoffee::before {
+        @include products-before(2);
+       }
       
-    //   &-milkshake::before {
-    //     @include products-before(3);
-    //     }
+      &-milkshake::before {
+        @include products-before(3);
+        }
        
-    // }
+    }
     
 @media screen and (min-width: 768px) {
     .products-cards {
