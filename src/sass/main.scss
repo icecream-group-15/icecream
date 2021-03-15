@@ -1,2 +1,42 @@
 
-@import "./base/common";
+@import './utils/variables';
+
+@import './utils/mixins';
+
+@import './base/container';
+
+@import './base/common';
+
+@import './components/backdrop';
+
+@import './components/button';
+
+@import './components/footer-social-link';
+
+@import './components/modal-franchise';
+
+@import './components/modal-location';
+
+@import './layout/about';
+
+@import './layout/advantages';
+
+@import './layout/contacts';
+
+@import './layout/footer';
+
+@import './layout/gallery';
+
+@import './layout/header';
+
+@import './layout/hero';
+
+@import './layout/products';
+
+@import './layout/reviews';
+
+@import './utils/title';
+
+@import './utils/visually-hidden';
+
+@import './components/slick-slider';
