@@ -162,7 +162,6 @@ img {
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .about-section {
-    color: transparent;
     background-image: url(/milk-mobile@2x.bbcdc1ae.png);
   }
 }
@@ -234,7 +233,6 @@ img {
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .about-section .about-section {
-    color: transparent;
     background-image: url(/milk-mobile@2x.bbcdc1ae.png);
   }
 }
@@ -343,7 +341,7 @@ img {
   line-height: 1.5833333333;
   color: #907e82;
 }
-.backdrop.is-hidden .modal-about {
+.backdrop-about.is-hidden .modal-about {
   transform: translate(-50%, -50%) scale(0.5);
 }
 
@@ -502,21 +500,17 @@ img {
   }
 }
 
-.contacts-section .container {
-  margin-top: 170px;
+@media screen and (max-width: 767px) {
+  .contacts-list {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
-
 @media screen and (min-width: 768px) {
   .contacts-list {
     display: flex;
-    margin: -10px;
-    margin-top: 197px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .contacts-list {
-    margin: -15px;
-    margin-top: 234px;
   }
 }
 
@@ -525,16 +519,20 @@ img {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 20px;
+  display: inline-block;
 }
-.contacts-itme:first-child {
-  margin-top: -84px;
+@media screen and (max-width: 767px) {
+  .contacts-itme:first-child {
+    margin-top: -84px;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts-itme {
-    width: calc((100% - 3 * 16px) / 3);
-    margin: 10px;
-    margin-top: -78px;
+    margin-top: -84px;
     padding: 50px 30px 50px 30px;
+  }
+  .contacts-itme:not(:last-child) {
+    margin-right: 20px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -543,9 +541,9 @@ img {
     padding-top: 52px;
     padding-left: 45px;
     padding-right: 45px;
-    width: calc((100% - 3 * 30px) / 3);
-    margin: 15px;
-    margin-top: -102px;
+  }
+  .contacts-itme:not(:last-child) {
+    margin-right: 30px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -553,17 +551,17 @@ img {
     margin-bottom: 20px;
   }
 }
-.contacts-itme:nth-child(even) .contacts-title {
+.contacts-itme:nth-child(even) .contacts-name {
   min-width: 130px;
   background-color: #c2e297;
 }
 @media screen and (min-width: 768px) {
-  .contacts-itme:nth-child(even) .contacts-title {
+  .contacts-itme:nth-child(even) .contacts-name {
     min-width: 138px;
   }
 }
 
-.contacts-title {
+.contacts-name {
   min-width: 80px;
   font-style: normal;
   font-size: 12px;
@@ -578,7 +576,7 @@ img {
   color: #ffffff;
 }
 @media screen and (min-width: 768px) {
-  .contacts-title {
+  .contacts-name {
     min-width: 74px;
     font-size: 16px;
     font-weight: 500;
@@ -705,7 +703,6 @@ img {
   font-size: 12px;
   font-weight: 500;
   line-height: 1.8333333333;
-  /* identical to box height, or 186% */
   color: #ffa5ba;
 }
 @media screen and (min-width: 768px) {
@@ -727,7 +724,6 @@ img {
   font-size: 12px;
   font-weight: 500;
   line-height: 1.5;
-  /* or 150% */
   color: #907e82;
 }
 @media screen and (min-width: 768px) {
@@ -757,6 +753,11 @@ img {
     justify-content: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .contacts-btn-wraper {
+    padding-top: 80px;
+  }
+}
 
 .btn {
   position: relative;
@@ -783,6 +784,7 @@ img {
   color: #ffffff;
   cursor: pointer;
   transform: scale(1.1);
+  outline: none;
 }
 
 .btn:hover .location-icon,
@@ -792,7 +794,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .btn:first-child {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -802,7 +804,7 @@ img {
   }
   .btn:first-child {
     width: 191px;
-    margin-right: 15px;
+    margin-right: 40px;
     padding: 0 30px;
   }
   .btn:last-child {
@@ -1737,6 +1739,9 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
+.products-description-button:hover, .products-description-button:focus {
+  transform: scale(1.1);
+}
 
 .products {
   padding-top: 121px;
@@ -1750,24 +1755,13 @@ img {
   margin: 0 auto;
 }
 .products-cards-icecream {
-  background-color: #FFB8CA;
+  background-color: #ffb8ca;
 }
 .products-cards-icecoffee {
-  background: #F0D1A5;
+  background: #f0d1a5;
 }
 .products-cards-milkshake {
-  background: #C2E297;
-}
-.products span {
-  display: block;
-  color: #ffa5ba;
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-.products h2 {
-  font-size: 34px;
-  color: #d41443;
-  margin-bottom: 30px;
+  background: #c2e297;
 }
 .products li {
   position: relative;
@@ -1960,10 +1954,6 @@ img {
   .products h3 {
     margin-bottom: 66px;
   }
-
-  .products h2 {
-    margin-bottom: 40px;
-  }
 }
 @media screen and (min-width: 1280px) {
   .products {
@@ -1985,14 +1975,75 @@ img {
     margin-right: 30px;
   }
 
-  .products h2 {
-    margin-bottom: 50px;
-  }
-
   .products-description-button {
     margin-top: 62px;
   }
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity;
+  z-index: 98;
+}
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  padding: 40px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 80%;
+  height: 95%;
+  max-height: 609px;
+  background-color: #fff5f6;
+  background-image: url(/milk-for-modal.be85f87b.png);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow-y: scroll;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 150;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform;
+}
+.modal-description {
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5833333333;
+  color: #907e82;
+}
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-title-products {
+  display: block;
+  margin-bottom: 30px;
+  font-family: Titan One;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.15;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
 .slider {
   text-align: center;
   padding-bottom: 170px;
