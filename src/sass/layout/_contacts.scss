@@ -5,19 +5,9 @@
     padding-bottom: 165px;
   }
 }
-.contacts-section .container {
-  margin-top: 170px;
-}
 .contacts-list {
-  //margin-top: -84px;
   @media screen and(min-width:768px) {
     display: flex;
-    margin: -10px;
-    margin-top: 197px;
-  }
-  @media screen and(min-width:1280px) {
-    margin: -15px;
-    margin-top: 234px;
   }
 }
 .contacts-itme {
@@ -25,13 +15,18 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 20px;
+width: calc(100%-16px);
+display: inline-block;
   &:first-child{
-   margin-top: -84px;
+  @media screen and(max-width:767px) {
+    margin-top: -84px;
+  }
  }
   @media screen and(min-width:768px) {
-    width: calc((100% - 3 * 16px) / 3);
-    margin: 10px;
-    margin-top: -78px;
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+    margin-top: -84px;
     padding: 50px 30px 50px 30px;
   }
   @media screen and(min-width:1280px) {
@@ -39,9 +34,9 @@
     padding-top: 52px;
     padding-left: 45px;
     padding-right: 45px;
-    width: calc((100% - 3 * 30px) / 3);
-    margin: 15px;
-   margin-top: -102px;
+     &:not(:last-child){
+      margin-right: 30px;
+    }
   }
   //outline: 1px solid red;
   &:not(:last-child) {
@@ -49,7 +44,7 @@
       margin-bottom: 20px;
     }
   }
-  &:nth-child(even) .contacts-title {
+  &:nth-child(even) .contacts-name {
     min-width: 130px;
     background-color: #c2e297;
     @media screen and(min-width:768px) {
@@ -57,7 +52,7 @@
     }
   }
 }
-.contacts-title {
+.contacts-name {
   min-width: 80px;
   font-style: normal;
   @include font(12px, 500, 22px);
@@ -149,7 +144,7 @@
 }
 .operatingmode-time {
   @include font(12px, 500, 22px);
-  /* identical to box height, or 186% */
+
   color: #ffa5ba;
   @media screen and(min-width:768px) {
     @include font(14px, 500, 24px);
@@ -160,7 +155,7 @@
 }
 .contacts-data-link {
   @include font(12px, 500, 18px);
-  /* or 150% */
+
   color: #907e82;
   @media screen and(min-width:768px) {
     @include font(14px, 500, 26px);
@@ -175,11 +170,12 @@
   flex-direction: column;
   align-items: center;
   padding-top: 54px;
-  // padding-bottom: 113px;
   @media screen and(min-width:768px) {
     flex-direction: row;
     justify-content: center;
-    //padding-bottom: 165px;
+  }
+  @media screen and(min-width:768px) {
+    padding-top: 80px;
   }
 }
 .btn {
@@ -205,6 +201,7 @@
     color: #ffffff;
     cursor: pointer;
     transform: scale(1.1);
+  outline: none;
   }
 }
 .btn:hover .location-icon,
@@ -213,7 +210,7 @@
 }
 @media screen and(max-width:767px) {
   .btn:first-child {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -224,7 +221,7 @@
 
     &:first-child {
       width: 191px;
-      margin-right: 15px;
+      margin-right: 40px;
       padding: 0 30px;
     }
     &:last-child {

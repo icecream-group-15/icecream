@@ -17,8 +17,6 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .about-section {
-      // улалити
-        color: transparent;
       background-image: url(../../src/images/about/milk-mobile@2x.png);
     }
   }
@@ -89,8 +87,6 @@
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       .about-section {
-        // улалити
-        color: transparent;
         background-image: url(../../src/images/about/milk-mobile@2x.png);
       }
     }
@@ -208,7 +204,7 @@
     color: $paragraph-text-color;
   }
 
-  .backdrop.is-hidden & {
+  .backdrop-about.is-hidden & {
     transform: translate(-50%, -50%) scale(0.5);
   }
 }
