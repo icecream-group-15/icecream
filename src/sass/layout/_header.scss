@@ -5,6 +5,10 @@
     width: 100%;
     z-index: 40;
     padding-top: 6px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 37px;
+    }
     
     .navigation{
         display: flex;
