@@ -10,8 +10,11 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
                     aliqua facilisis.
                 </p>
-                <button class="products-description-button">
                     
+
+                <button class="products-description-button js-open-modal" type="button" data-modal="1">
+
+
                     <img src="./images/products/arrow-right.png" alt="">
 
                 </button>
@@ -25,7 +28,8 @@
                     aliqua facilisis.
                     </p>
 
-                    <button class="products-description-button">
+                <button class="products-description-button js-open-modal" type="button" data-modal="2">
+
                     <img src="./images/products/arrow-right.png" alt="">
                     </button>
                  
@@ -36,12 +40,137 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
                 aliqua facilisis.
                 </p>
-                <button class="products-description-button">
-                <img src="./images/products/arrow-right.png" alt="">
                    
+
+                <button class="products-description-button js-open-modal" type="button" data-modal="3">
+                    <img src="./images/products/arrow-right.png" alt="">
+
+
                 </button>
             </li>
             
         </ul>
     </div>
 </section>
+
+<!--Modals-->
+<div class="overlay" id="overlay-modal"></div>
+
+<!--01-->
+
+<div class="modal" data-modal="1">
+    <span class="modal-title-products">ice cream</span>
+    <p class="modal-about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam tellus at
+        neque aliquam laoreet. Phasellus
+        sodales nisl pulvinar felis blandit condimentum. Aenean auctor est lorem, ut lobortis mauris finibus ac. Donec
+        scelerisque hendrerit tincidunt. Suspendisse posuere porta sem in lacinia. In porttitor tellus vestibulum tellus
+        laoreet, ut molestie nunc ullamcorper. Pellentesque ac turpis egestas, feugiat elit a, ullamcorper eros. Fusce
+        aliquet
+        ipsum dolor, eget mattis libero vehicula vitae. Cras in metus velit.</p>
+
+    <p class="modal-about-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+        turpis
+        egestas. Curabitur elementum ut
+        lacus vel aliquet. Aliquam malesuada quam mi, auctor hendrerit felis finibus ut. Pellentesque lacinia
+        pellentesque
+        odio
+        eget finibus. Vivamus auctor lectus eget leo faucibus sagittis. Morbi nec enim turpis. Nam bibendum tellus ut
+        nisl
+        eleifend, et auctor sem semper.</p>
+
+    <p class="modal-about-description">Donec feugiat aliquet leo, sit amet lobortis elit scelerisque eget. Pellentesque
+        interdum magna eget urna ornare, ut
+        varius mauris fermentum. Nam sit amet ligula quis tellus iaculis ultricies. Aenean nec feugiat augue. Nullam a
+        felis
+        et
+        risus ultricies mattis. Aenean tempus ultricies tortor et auctor. Sed neque lacus, ultrices in accumsan eu,
+        sodales
+        nec
+        nulla. Nunc in est elementum ligula fermentum posuere congue vel diam. Nullam elementum nisi risus, eget semper
+        mauris
+        rutrum dictum. Cras ut consequat libero. Fusce aliquam magna tortor, ut malesuada dui fringilla non. </p>
+    <button class="about-button read-more-btn js-modal-close" type="button">Back
+        <svg class="about-button-icon" width="8.5" height="12">
+            <use href="../src/images/sprite.svg#icon-about"></use>
+        </svg>
+    </button>
+</div>
+
+<!--02-->
+<div class="modal" data-modal="2">
+    <span class="modal-title-products">ice coffee</span>
+    <p class="modal-about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam tellus at
+        neque aliquam laoreet. Phasellus
+        sodales nisl pulvinar felis blandit condimentum. Aenean auctor est lorem, ut lobortis mauris finibus ac. Donec
+        scelerisque hendrerit tincidunt. Suspendisse posuere porta sem in lacinia. In porttitor tellus vestibulum tellus
+        laoreet, ut molestie nunc ullamcorper. Pellentesque ac turpis egestas, feugiat elit a, ullamcorper eros. Fusce
+        aliquet
+        ipsum dolor, eget mattis libero vehicula vitae. Cras in metus velit.</p>
+
+    <p class="modal-about-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+        turpis
+        egestas. Curabitur elementum ut
+        lacus vel aliquet. Aliquam malesuada quam mi, auctor hendrerit felis finibus ut. Pellentesque lacinia
+        pellentesque
+        odio
+        eget finibus. Vivamus auctor lectus eget leo faucibus sagittis. Morbi nec enim turpis. Nam bibendum tellus ut
+        nisl
+        eleifend, et auctor sem semper.</p>
+
+    <p class="modal-about-description">Donec feugiat aliquet leo, sit amet lobortis elit scelerisque eget. Pellentesque
+        interdum magna eget urna ornare, ut
+        varius mauris fermentum. Nam sit amet ligula quis tellus iaculis ultricies. Aenean nec feugiat augue. Nullam a
+        felis
+        et
+        risus ultricies mattis. Aenean tempus ultricies tortor et auctor. Sed neque lacus, ultrices in accumsan eu,
+        sodales
+        nec
+        nulla. Nunc in est elementum ligula fermentum posuere congue vel diam. Nullam elementum nisi risus, eget semper
+        mauris
+        rutrum dictum. Cras ut consequat libero. Fusce aliquam magna tortor, ut malesuada dui fringilla non. </p>
+    <button class="about-button read-more-btn js-modal-close" type="button">Back
+        <svg class="about-button-icon" width="8.5" height="12">
+            <use href="../src/images/sprite.svg#icon-about"></use>
+        </svg>
+    </button>
+</div>
+
+<!--03-->
+
+<div class="modal" data-modal="3">
+    <span class="modal-title-products">milk-shakes</span>
+    <p class="modal-about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam tellus at
+        neque aliquam laoreet. Phasellus
+        sodales nisl pulvinar felis blandit condimentum. Aenean auctor est lorem, ut lobortis mauris finibus ac. Donec
+        scelerisque hendrerit tincidunt. Suspendisse posuere porta sem in lacinia. In porttitor tellus vestibulum tellus
+        laoreet, ut molestie nunc ullamcorper. Pellentesque ac turpis egestas, feugiat elit a, ullamcorper eros. Fusce
+        aliquet
+        ipsum dolor, eget mattis libero vehicula vitae. Cras in metus velit.</p>
+
+    <p class="modal-about-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+        turpis
+        egestas. Curabitur elementum ut
+        lacus vel aliquet. Aliquam malesuada quam mi, auctor hendrerit felis finibus ut. Pellentesque lacinia
+        pellentesque
+        odio
+        eget finibus. Vivamus auctor lectus eget leo faucibus sagittis. Morbi nec enim turpis. Nam bibendum tellus ut
+        nisl
+        eleifend, et auctor sem semper.</p>
+
+    <p class="modal-about-description">Donec feugiat aliquet leo, sit amet lobortis elit scelerisque eget. Pellentesque
+        interdum magna eget urna ornare, ut
+        varius mauris fermentum. Nam sit amet ligula quis tellus iaculis ultricies. Aenean nec feugiat augue. Nullam a
+        felis
+        et
+        risus ultricies mattis. Aenean tempus ultricies tortor et auctor. Sed neque lacus, ultrices in accumsan eu,
+        sodales
+        nec
+        nulla. Nunc in est elementum ligula fermentum posuere congue vel diam. Nullam elementum nisi risus, eget semper
+        mauris
+        rutrum dictum. Cras ut consequat libero. Fusce aliquam magna tortor, ut malesuada dui fringilla non. </p>
+    <button class="about-button read-more-btn js-modal-close" type="button">Back
+        <svg class="about-button-icon" width="8.5" height="12">
+            <use href="../src/images/sprite.svg#icon-about"></use>
+        </svg>
+    </button>
+</div>
